@@ -13,7 +13,7 @@ public class LoginPage implements ActionListener {
     JPasswordField userPasswordField = new JPasswordField();
     JLabel userIDLabel = new JLabel("userID");
     JLabel userPasswordLabel = new JLabel("Password");
-    JLabel messageLabel = new JLabel("TEST");
+    JLabel messageLabel = new JLabel();
     HashMap<String,String> logininfo = new HashMap<String,String>();
     LoginPage(HashMap<String,String> loginInfoOriginal){
 
@@ -25,10 +25,15 @@ public class LoginPage implements ActionListener {
         messageLabel.setBounds(125,250,250,35);
         messageLabel.setFont(new Font(null,Font.ITALIC,25));
 
+        userIDField.setBounds(125,100,200,25);
+        userPasswordField.setBounds(125,150,200,25);
+
 
         frame.add(userIDLabel);
         frame.add(userPasswordLabel);
         frame.add(messageLabel);
+        frame.add(userIDField);
+        frame.add(userPasswordField);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(420,420);
         frame.setLayout(null);
