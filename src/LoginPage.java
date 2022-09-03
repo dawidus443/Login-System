@@ -28,12 +28,21 @@ public class LoginPage implements ActionListener {
         userIDField.setBounds(125,100,200,25);
         userPasswordField.setBounds(125,150,200,25);
 
+        loginButton.setBounds(125,200,100,25);
+        loginButton.setFocusable(false);
+        loginButton.addActionListener(this);
+
+        resetButton.setBounds(225,200,100,25);
+        resetButton.setFocusable(false);
+        resetButton.addActionListener(this);
 
         frame.add(userIDLabel);
         frame.add(userPasswordLabel);
         frame.add(messageLabel);
         frame.add(userIDField);
         frame.add(userPasswordField);
+        frame.add(loginButton);
+        frame.add(resetButton);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(420,420);
         frame.setLayout(null);
