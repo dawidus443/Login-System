@@ -5,9 +5,9 @@ public class IDandPasswords {
 
     IDandPasswords(){
 
-        logininfo.put("mark123","LAL123");
-        logininfo.put("daw123","car123");
-        logininfo.put("camile123","plane123");
+        logininfo.put("jack","lakers");
+        logininfo.put("david","car");
+        logininfo.put("camile","plane");
     }
 
     protected HashMap getLoginInfo(){
